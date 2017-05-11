@@ -37,41 +37,56 @@ public class ControlesResource {
         String queryString;
         //Carregando arquivo .owl
         FileManager.get().addLocatorClassLoader(Main.class.getClassLoader());
-        model = FileManager.get().loadModel("C:\\Users\\Pedro Ivo\\Documents\\Mestrado\\Banco de Dados\\vaquinha2.owl");
+        model = FileManager.get().loadModel(
+                "C:\\Users\\Pedro Ivo\\Documents\\NetBeansProjects\\visualizacao_semantica_estrutural\\files\\ontology\\vaquinha_importacao.owl");
         
         //Montando a string de query em sparql
         //Query para obter as fazendas relacionadas com todos os produtores cadastrados
         queryString = "PREFIX rdf: <http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#>\n" +
-                      "SELECT  *\n" +
-                      "WHERE{\n" +
-                      "	?vaca rdf:hasProducao ?lactacao .\n" +
-                      "	?lactacao rdf:hasControleLeiteiro ?controle .\n" +
-                      "	?controle rdf:ValorCCSLeite ?ccsAtual .\n" +
-                      "	?controle rdf:ValorCCSAnteriorLeite ?ccsAnterior .	\n" +
-                      "	?controle rdf:ValorAcumuladoLeite ?leite .\n" +
-                      "	?controle rdf:DataControleLeiteiro ?dataControle .\n" +
-                      "	?controle rdf:ValorGorduraLeite ?percentGord .\n" +
-                      "	?controle rdf:ValorProteinaLeite ?percentProt .\n" +
-                      " ?vaca rdf:NomeVaca ?nomeVaquinha" +
-                      "}\n" +
-                     "ORDER BY  (?vaca) (?dataControle)" ;
-
+"                      SELECT  *\n" +
+"                      WHERE{\n" +
+"                       ?vaca rdf:hasProducao ?lactacao .\n" +
+"                      	?lactacao rdf:hasControleLeiteiro ?controle .\n" +
+"               	OPTIONAL{ ?controle rdf:ValorCCSLeite ?ccsAtual . }\n" +
+"                      	OPTIONAL{ ?controle rdf:ValorCCSAnteriorLeite ?ccsAnterior . }\n" +
+"                      	OPTIONAL{ ?controle rdf:ValorAcumuladoLeite ?leite . }\n" +
+"                       OPTIONAL{ ?controle rdf:ValorGorduraLeite ?percentGord . }\n" +
+"                       OPTIONAL{ ?controle rdf:ValorProteinaLeite ?percentProt . }\n" +
+"                       ?vaca rdf:NomeVaca ?nomeVaquinha\n" +
+"                      }";
         //Exibe todos os resultados obtidos com a query
-        //CriaÃ§Ã£o e execuÃ§Ã£o da query para explorar os resultados em seguida
+        //Criação e execução da query para explorar os resultados em seguida
         query = QueryFactory.create(queryString);
         try(QueryExecution qexec = QueryExecutionFactory.create(query,model)){
             ResultSet results = qexec.execSelect();
             while( results.hasNext() ){
                 QuerySolution soln = results.nextSolution();
-                controles.add(new ControleLeiteiro(
-                                    //(XSDDateTime)soln.getLiteral("dataControle").getValue(),
-                                    (float) soln.getLiteral("leite").getValue(),
-                                    (int)soln.getLiteral("ccsAtual").getValue(), 
-                                    (int)soln.getLiteral("ccsAnterior").getValue(),
-                                    (float) soln.getLiteral("percentGord").getValue(),
-                                    (float) soln.getLiteral("percentProt").getValue(),
-                                    (String)soln.getLiteral("nomeVaquinha").getValue())                
-                                );
+                System.out.println("linha ---->"+results.getRowNumber()+"\n\n");
+                //if(results.getRowNumber() == 399){
+                //    results.nextSolution();
+                //}
+                if(!((String)soln.getLiteral("nomeVaquinha").getValue()).equals("null")
+                        && !(soln.getLiteral("leite") == null)
+                        && !(soln.getLiteral("ccsAtual") == null)
+                        && !(soln.getLiteral("ccsAnterior") == null)
+                        && !(soln.getLiteral("percentGord") == null)
+                        && !(soln.getLiteral("percentProt") == null)){
+                    controles.add(new ControleLeiteiro(
+                                        //(XSDDateTime)soln.getLiteral("dataControle").getValue(),
+                                        /*((String)soln.getLiteral("leite").getValue()).equals("null") ? null : Float.parseFloat((String)soln.getLiteral("leite").getValue()),
+                                        ((String)soln.getLiteral("ccsAtual").getValue()).equals("null") ? null : Integer.parseInt((String)soln.getLiteral("ccsAtual").getValue()), 
+                                        ((String)soln.getLiteral("ccsAnterior").getValue()).equals("null") ? null : Integer.parseInt((String)soln.getLiteral("ccsAnterior").getValue()),
+                                        ((String)soln.getLiteral("percentGord").getValue()).equals("null") ? null : Float.parseFloat((String)soln.getLiteral("percentGord").getValue()),
+                                        ((String)soln.getLiteral("percentProt").getValue()).equals("null") ? null : Float.parseFloat((String)soln.getLiteral("percentProt").getValue()),
+                                        (String)soln.getLiteral("nomeVaquinha").getValue())*/
+                                        (Float)soln.getLiteral("leite").getValue(),
+                                        (Integer)soln.getLiteral("ccsAtual").getValue(), 
+                                        (Integer)soln.getLiteral("ccsAnterior").getValue(),
+                                        (Float)soln.getLiteral("percentGord").getValue(),
+                                        (Float)soln.getLiteral("percentProt").getValue(),
+                                        (String)soln.getLiteral("nomeVaquinha").getValue())
+                                    );
+                }
             }
         }
         

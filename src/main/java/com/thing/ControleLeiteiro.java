@@ -16,11 +16,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class ControleLeiteiro {
     //private XSDDateTime dataControle;
-    private float valorAcumuladoLeite;
-    private int valorCCSLeite;
-    private int valorCCSAnteriorLeite;
-    private float percentual_gordura;
-    private float percentual_proteina;
+    private Float valorAcumuladoLeite;
+    private Integer valorCCSLeite;
+    private Integer valorCCSAnteriorLeite;
+    private Float percentual_gordura;
+    private Float percentual_proteina;
     private String identificadorVaca;
 
     public ControleLeiteiro() {
@@ -28,8 +28,8 @@ public class ControleLeiteiro {
 
     //public ControleLeiteiro(XSDDateTime dataControle, float valorAcumuladoLeite, int valorCCSLeite, int valorCCSAnteriorLeite, 
                             //float percentual_gordura, float percentual_proteina, String identificadorVaca) {
-    public ControleLeiteiro(float valorAcumuladoLeite, int valorCCSLeite, int valorCCSAnteriorLeite, 
-                            float percentual_gordura, float percentual_proteina, String identificadorVaca) {
+    public ControleLeiteiro(Float valorAcumuladoLeite, Integer valorCCSLeite, Integer valorCCSAnteriorLeite, 
+                            Float percentual_gordura, Float percentual_proteina, String identificadorVaca) {
         //this.dataControle = dataControle;
         this.valorAcumuladoLeite = valorAcumuladoLeite;
         this.valorCCSLeite = valorCCSLeite;
@@ -46,14 +46,24 @@ public class ControleLeiteiro {
         Conexao conex = new Conexao();
         Connection conexao = conex.getConn();
         
-        String sql = "SELECT * FROM controle_leiteiro WHERE data_controle > '01/01/2014' AND percentual_gordura is not null";
+        String sql = "SELECT cl.*,cl_ant.ccs as ccs_anterior "
+                    + "FROM controle_leiteiro cl "
+                    + "     INNER JOIN controle_leiteiro cl_ant ON cl.id_animal = cl_ant.id_animal "
+                    + "     AND cl_ant.data_controle = (select MAX(c.data_controle) from controle_leiteiro c "
+                    + "         where c.id_animal = cl.id_animal AND c.data_controle < cl.data_controle AND c.ccs is not null)"
+                    + "WHERE cl.data_controle > '01/01/2014' AND cl.percentual_gordura is not null";
         Statement stm = conexao.createStatement();
         rs = stm.executeQuery(sql);
         
-        todos = String.format("%10s;%60s \n","id_controle_leiteiro","data_controle");
+        todos = String.format("%10s;%10s;%10s;%20s;%20s;%20s;%20s \n",
+                "id_controle_leiteiro","data_controle","leite_acumulado","ccs_leite","ccs_anterior_leite","percentual_gordura",
+                "percentual_proteina");
         
         while(rs.next()){
-            todos = todos.concat(String.format("%10s;%60s \n",rs.getString("id_controle_leiteiro"),rs.getString("data_controle")));
+            todos = todos.concat(String.format("%10s;%10s;%10s;%20s;%20s;%20s;%20s \n",
+                    rs.getString("id_controle_leiteiro"),rs.getString("data_controle"),rs.getString("producao_acumulada_leite"),
+                    rs.getString("ccs"),rs.getString("ccs_anterior"),rs.getString("percentual_gordura"),
+                    rs.getString("percentual_proteina")));
         }
         
         return todos;
@@ -67,43 +77,43 @@ public class ControleLeiteiro {
     //    this.dataControle = dataControle;
     //}
 
-    public float getValorAcumuladoLeite() {
+    public Float getValorAcumuladoLeite() {
         return valorAcumuladoLeite;
     }
 
-    public void setValorAcumuladoLeite(float valorAcumuladoLeite) {
+    public void setValorAcumuladoLeite(Float valorAcumuladoLeite) {
         this.valorAcumuladoLeite = valorAcumuladoLeite;
     }
 
-    public int getValorCCSLeite() {
+    public Integer getValorCCSLeite() {
         return valorCCSLeite;
     }
 
-    public void setValorCCSLeite(int valorCCSLeite) {
+    public void setValorCCSLeite(Integer valorCCSLeite) {
         this.valorCCSLeite = valorCCSLeite;
     }
 
-    public int getValorCCSAnteriorLeite() {
+    public Integer getValorCCSAnteriorLeite() {
         return valorCCSAnteriorLeite;
     }
 
-    public void setValorCCSAnteriorLeite(int valorCCSAnteriorLeite) {
+    public void setValorCCSAnteriorLeite(Integer valorCCSAnteriorLeite) {
         this.valorCCSAnteriorLeite = valorCCSAnteriorLeite;
     }
 
-    public float getPercentual_gordura() {
+    public Float getPercentual_gordura() {
         return percentual_gordura;
     }
 
-    public void setPercentual_gordura(float percentual_gordura) {
+    public void setPercentual_gordura(Float percentual_gordura) {
         this.percentual_gordura = percentual_gordura;
     }
 
-    public float getPercentual_proteina() {
+    public Float getPercentual_proteina() {
         return percentual_proteina;
     }
 
-    public void setPercentual_proteina(float percentual_proteina) {
+    public void setPercentual_proteina(Float percentual_proteina) {
         this.percentual_proteina = percentual_proteina;
     }
 
@@ -114,6 +124,4 @@ public class ControleLeiteiro {
     public void setIdentificadorVaca(String identificadorVaca) {
         this.identificadorVaca = identificadorVaca;
     }
-    
-    
 }

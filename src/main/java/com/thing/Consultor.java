@@ -19,7 +19,7 @@ public class Consultor {
         Conexao conex = new Conexao();
         Connection conexao = conex.getConn();
         
-        String sql = "SELECT * FROM entidade WHERE id_tipo_entidade = 8";
+        String sql = "SELECT * FROM entidade WHERE id_tipo_entidade = 8 and id_associacao is not null";
         Statement stm = conexao.createStatement();
         rs = stm.executeQuery(sql);
         
