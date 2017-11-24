@@ -44,9 +44,9 @@ public class GerenciaisResource {
 "                      SELECT  *\n" +
 "                      WHERE{\n" +
 "                      	\n" +
-"	?nucleo rdf:possui ?coordenador .\n" +
-"	?coordenador rdf:coordena ?consultor .\n" +
-"	OPTIONAL{ ?consultor rdf:consulta ?fazenda . }\n" +
+"	?nucleo rdf:hasCoordinator ?coordenador .\n" +
+"	?coordenador rdf:coordinatesConsultant ?consultor .\n" +
+"	OPTIONAL{ ?consultor rdf:consultsFarm ?fazenda . }\n" +
 "	OPTIONAL{ ?consultor rdf:NomeConsultor ?nome_consultor . }\n" +
 "	OPTIONAL{ ?coordenador rdf:NomeCoordenador ?nome_coordenador . }\n" +
 "	OPTIONAL{ ?nucleo rdf:NomeNucleo ?nome_nucleo . }\n" +

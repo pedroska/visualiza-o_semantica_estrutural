@@ -44,23 +44,26 @@ public class ProducaoRebanhoResource {
         model = ro.getInfModel();
         //Montando a string de query em sparql
         //Query para obter as fazendas relacionadas com todos os produtores cadastrados
-        /*queryString = "PREFIX ont: <http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#>\n" +
-"SELECT  ?nome_rebanho (SUM(?total_leite) as ?producao_rebanho) (MAX(?maior_controle) as ?ultimo_controle)\n" +
-"WHERE{\n" +
-"  {\n" +
-"  SELECT ?nome_rebanho ?vaca (MAX(?data) as ?maior_controle) (MAX(?leite) as ?total_leite)\n" +
-"  WHERE{  ?rebanho ont:hasVaca ?vaca.    ?vaca ont:hasProducao ?producao. ?producao ont:hasControleLeiteiro ?controle.  "+
-"          ?controle ont:DataControleLeiteiro ?data. ?controle ont:ValorAcumuladoLeite ?leite. ?rebanho ont:NomeRebanho ?nome_rebanho.}\n" +
-"  GROUP BY ?nome_rebanho ?vaca\n" +
-"  }\n" +
-"}\n" +
-"GROUP BY ?nome_rebanho";*/
+//Normal        
+//        queryString = "PREFIX ont: <http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#>\n" +
+//"SELECT  ?nome_rebanho (SUM(?total_leite) as ?producao_rebanho) (MAX(?maior_controle) as ?ultimo_controle)\n" +
+//"WHERE{\n" +
+//"  {\n" +
+//"  SELECT ?nome_rebanho ?vaca (MAX(?data) as ?maior_controle) (MAX(?leite) as ?total_leite)\n" +
+//"  WHERE{  ?rebanho ont:hasAnimal ?vaca.    ?vaca ont:hasProduction ?producao. ?producao ont:hasDairyControl ?controle.\n" +
+//"          ?controle ont:DataControleLeiteiro ?data. ?controle ont:ValorAcumuladoLeite ?leite. ?rebanho ont:NomeRebanho ?nome_rebanho.}\n" +
+//"  GROUP BY ?nome_rebanho ?vaca\n" +
+//"  }\n" +
+//"}\n" +
+//"GROUP BY ?nome_rebanho";
+        
+//Property Chains        
         queryString = "PREFIX ont: <http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#>\n" +
 "SELECT  ?nome_rebanho (SUM(?total_leite) as ?producao_rebanho) (MAX(?maior_controle) as ?ultimo_controle)\n" +
 "WHERE{\n" +
 "  {\n" +
 "  SELECT ?nome_rebanho ?vaca (MAX(?data) as ?maior_controle) (MAX(?leite) as ?total_leite)\n" +
-"  WHERE{  ?rebanho ont:hasVaca ?vaca.    ?vaca ont:vacaTemControleLeiteiro ?controle.  "+
+"  WHERE{  ?rebanho ont:hasAnimal ?vaca.    ?vaca ont:cowHasDairyControl ?controle.  "+
 "          ?controle ont:DataControleLeiteiro ?data. ?controle ont:ValorAcumuladoLeite ?leite. ?rebanho ont:NomeRebanho ?nome_rebanho.}\n" +
 "  GROUP BY ?nome_rebanho ?vaca\n" +
 "  }\n" +

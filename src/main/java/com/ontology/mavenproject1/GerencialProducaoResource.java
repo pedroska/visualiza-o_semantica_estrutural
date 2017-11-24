@@ -61,10 +61,11 @@ public class GerencialProducaoResource {
         queryString = "PREFIX ont: <http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#>\n" +
 "SELECT  ?nome_nucleo ?nome_coordenador ?nome_consultor ?nome_fazenda ?nome_rebanho (SUM(?leite_acumulado) as ?total_producao)\n" +
 "WHERE{\n" +
-"       ?nucleo ont:possui ?coordenador. ?nucleo ont:nucleoGerencia ?consultor.  ?consultor ont:consulta ?fazenda.  "
-                + "?fazenda ont:hasRebanho ?rebanho.  ?rebanho ont:hasVaca ?vaca.\n" +
+"       ?nucleo ont:hasCoordinator ?coordenador. ?nucleo ont:regionalCenterManages ?consultor.  "
+                + "?consultor ont:consultsFarm ?fazenda.  "
+                + "?fazenda ont:hasHerd ?rebanho.  ?rebanho ont:hasAnimal ?vaca.\n" +
 "	{SELECT ?vaca (MAX(?leite) as ?leite_acumulado)\n" +
-"	 WHERE{?vaca ont:vacaTemControleLeiteiro ?controle. ?controle ont:ValorAcumuladoLeite ?leite.}\n" +
+"	 WHERE{?vaca ont:cowHasDairyControl ?controle. ?controle ont:ValorAcumuladoLeite ?leite.}\n" +
 "	GROUP BY ?vaca" +
 "	}\n" +
 "       ?nucleo ont:NomeNucleo ?nome_nucleo. ?coordenador ont:NomeCoordenador ?nome_coordenador. ?consultor ont:NomeConsultor ?nome_consultor. ?fazenda ont:NomeFazenda ?nome_fazenda. ?rebanho ont:NomeRebanho ?nome_rebanho." +

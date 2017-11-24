@@ -32,7 +32,7 @@ public class GrafoGerencialResource {
         return retornaQueryGrafoOntologia();
     }
     
-    //Retorna a query para construção do grafo gerencial baseado nos indivíduos da ontologia
+    //Retorna a query para construção do grafo gerencial baseado nos indivíduos da ontologia (Neo4j)
     private String retornaQueryGrafoOntologia() throws SQLException{
        
         String output = "";
@@ -126,10 +126,11 @@ public class GrafoGerencialResource {
         queryString = "PREFIX ont: <http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#>\n" +
 "SELECT  ?nome_consultor ?nome_fazenda (SUM(?leite_acumulado) as ?total_producao)\n" +
 "WHERE{\n" +
-"       ?nucleo ont:possui ?coordenador. ?nucleo ont:nucleoGerencia ?consultor.  ?consultor ont:consulta ?fazenda.  "
-                + "?fazenda ont:hasRebanho ?rebanho.  ?rebanho ont:hasVaca ?vaca.\n" +
+"       ?nucleo ont:hasCoordinator ?coordenador. ?nucleo ont:regionalCenterManages ?consultor.  "
+                + "?consultor ont:consultsFarm ?fazenda.  "
+                + "?fazenda ont:hasHerd ?rebanho.  ?rebanho ont:hasAnimal ?vaca.\n" +
 "	{SELECT ?vaca (MAX(?leite) as ?leite_acumulado)\n" +
-"	 WHERE{?vaca ont:vacaTemControleLeiteiro ?controle. ?controle ont:ValorAcumuladoLeite ?leite.}\n" +
+"	 WHERE{?vaca ont:cowHasDairyControl ?controle. ?controle ont:ValorAcumuladoLeite ?leite.}\n" +
 "	GROUP BY ?vaca" +
 "	}\n" +
 "       ?nucleo ont:NomeNucleo ?nome_nucleo. ?coordenador ont:NomeCoordenador ?nome_coordenador. ?consultor ont:NomeConsultor ?nome_consultor. ?fazenda ont:NomeFazenda ?nome_fazenda." +
@@ -154,10 +155,11 @@ public class GrafoGerencialResource {
         queryString = "PREFIX ont: <http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#>\n" +
 "SELECT  ?nome_coordenador ?nome_consultor (SUM(?leite_acumulado) as ?total_producao)\n" +
 "WHERE{\n" +
-"       ?nucleo ont:possui ?coordenador. ?nucleo ont:nucleoGerencia ?consultor.  ?consultor ont:consulta ?fazenda.  "
-                + "?fazenda ont:hasRebanho ?rebanho.  ?rebanho ont:hasVaca ?vaca.\n" +
+"       ?nucleo ont:hasCoordinator ?coordenador. ?nucleo ont:regionalCenterManages ?consultor.  "
+                + "?consultor ont:consultsFarm ?fazenda.  "
+                + "?fazenda ont:hasHerd ?rebanho.  ?rebanho ont:hasCow ?vaca.\n" +
 "	{SELECT ?vaca (MAX(?leite) as ?leite_acumulado)\n" +
-"	 WHERE{?vaca ont:vacaTemControleLeiteiro ?controle. ?controle ont:ValorAcumuladoLeite ?leite.}\n" +
+"	 WHERE{?vaca ont:cowHasDairyControl ?controle. ?controle ont:ValorAcumuladoLeite ?leite.}\n" +
 "	GROUP BY ?vaca" +
 "	}\n" +
 "       ?nucleo ont:NomeNucleo ?nome_nucleo. ?coordenador ont:NomeCoordenador ?nome_coordenador. ?consultor ont:NomeConsultor ?nome_consultor. ?fazenda ont:NomeFazenda ?nome_fazenda." +

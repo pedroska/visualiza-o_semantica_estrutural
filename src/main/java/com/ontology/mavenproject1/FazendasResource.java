@@ -39,7 +39,7 @@ public class FazendasResource {
         queryString = "PREFIX rdf: <http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#>\n" 
                     + "SELECT   ?fazenda\n"
                     + "WHERE{\n"
-                    + "	?produtor rdf:hasFazenda ?fazenda .\n" 
+                    + "	?produtor rdf:hasFarm ?fazenda .\n" 
                     + "}\n"
                     + "ORDER BY  (?fazenda)" ;
 

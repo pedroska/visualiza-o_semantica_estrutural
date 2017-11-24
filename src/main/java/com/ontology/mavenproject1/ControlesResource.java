@@ -45,8 +45,8 @@ public class ControlesResource {
         queryString = "PREFIX rdf: <http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#>\n" +
 "                      SELECT  *\n" +
 "                      WHERE{\n" +
-"                       ?vaca rdf:hasProducao ?lactacao .\n" +
-"                      	?lactacao rdf:hasControleLeiteiro ?controle .\n" +
+"                       ?vaca rdf:hasProduction ?lactacao .\n" +
+"                      	?lactacao rdf:hasDairyControl ?controle .\n" +
 "               	OPTIONAL{ ?controle rdf:ValorCCSLeite ?ccsAtual . }\n" +
 "                      	OPTIONAL{ ?controle rdf:ValorCCSAnteriorLeite ?ccsAnterior . }\n" +
 "                      	OPTIONAL{ ?controle rdf:ValorAcumuladoLeite ?leite . }\n" +
@@ -61,10 +61,6 @@ public class ControlesResource {
             ResultSet results = qexec.execSelect();
             while( results.hasNext() ){
                 QuerySolution soln = results.nextSolution();
-                System.out.println("linha ---->"+results.getRowNumber()+"\n\n");
-                //if(results.getRowNumber() == 399){
-                //    results.nextSolution();
-                //}
                 if(!((String)soln.getLiteral("nomeVaquinha").getValue()).equals("null")
                         && !(soln.getLiteral("leite") == null)
                         && !(soln.getLiteral("ccsAtual") == null)

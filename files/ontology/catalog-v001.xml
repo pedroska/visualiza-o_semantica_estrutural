@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1485720641704" name="duplicate:http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl" uri="vaquinha.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1485720641704" name="duplicate:http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl" uri="vaquinha_bckp_ontologia.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1510008692783" name="duplicate:http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl" uri="vaquinha.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1510008692783" name="duplicate:http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl" uri="vaquinhaPlusPlus.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1510008692783" name="duplicate:http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl" uri="vaquinha_bckp_ontologia.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1510008692783" name="duplicate:http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl" uri="vaquinha_importacao.owl"/>
     </group>
 </catalog>

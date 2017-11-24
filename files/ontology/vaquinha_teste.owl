@@ -1,0 +1,1086 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:nodeID="A0">
+    <owl:members rdf:nodeID="A1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ehConsultado">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Consultor"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Fazenda"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <owl:intersectionOf rdf:nodeID="A3"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Instituicao"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#enviaAmostra"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <rdf:rest rdf:nodeID="A6"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#VacaInfeccaoEliminada"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <owl:unionOf rdf:nodeID="A8"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Fazenda"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isRebanhoOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Rebanho">
+    <rdfs:subClassOf rdf:nodeID="A9"/>
+    <rdfs:subClassOf rdf:nodeID="A10"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isFazendaOf">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Produtor"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Fazenda"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <owl:members rdf:nodeID="A12"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Coordenador">
+    <rdfs:subClassOf rdf:nodeID="A13"/>
+    <rdfs:subClassOf rdf:nodeID="A14"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Entidade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#VacaNovaInfeccao"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#possui"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Entidade">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:minInclusive>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <rdf:rest rdf:nodeID="A19"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Entidade"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#hasVaca"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A20">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Fazenda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A21">
+    <rdf:rest rdf:nodeID="A22"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#hasRebanho"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A23">
+    <rdf:rest rdf:nodeID="A24"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Producao"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isRacaOf">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#RacaVaca"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ValorCCSLeite">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A25">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A26"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A27">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A28"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A29">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Rebanho"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isVacaOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A30">
+    <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</xsd:minExclusive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#instituicaoGerencia">
+    <owl:propertyChainAxiom rdf:nodeID="A31"/>
+    <owl:propertyChainAxiom rdf:nodeID="A32"/>
+    <owl:propertyChainAxiom rdf:nodeID="A33"/>
+    <rdfs:range rdf:nodeID="A7"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Instituicao"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#chains"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A34">
+    <rdf:rest rdf:nodeID="A35"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Entidade"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A32">
+    <rdf:rest rdf:nodeID="A36"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#atende"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A37">
+    <owl:someValuesFrom rdf:nodeID="A38"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ValorCCSLeite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Nucleo"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#pertence"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A39">
+    <owl:members rdf:nodeID="A40"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A41">
+    <rdf:rest rdf:nodeID="A42"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#coordena"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#VacaNovaInfeccao">
+    <owl:equivalentClass rdf:nodeID="A43"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A44">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Tanque"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#recebeAmostra"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ind">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A45">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Nucleo"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#atende"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#atende">
+    <rdfs:comment>Uma instituicao atende um conjunto de nucleos</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Nucleo"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Instituicao"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ehAtendido"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A46">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A47"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A48">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#VacaSaudavel"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:rest rdf:nodeID="A18"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ControleLeiteiro"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ControleLeiteiro">
+    <rdfs:subClassOf rdf:nodeID="A49"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A33">
+    <rdf:rest rdf:nodeID="A16"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#atende"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <rdf:rest rdf:nodeID="A50"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Consultor"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#coordena"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A51">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Produtor"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isFazendaOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Tanque">
+    <rdfs:subClassOf rdf:nodeID="A4"/>
+    <rdfs:subClassOf rdf:nodeID="A52"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A43">
+    <owl:intersectionOf rdf:nodeID="A53"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#tes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Produtor">
+    <rdfs:subClassOf rdf:nodeID="A54"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Instituicao">
+    <rdfs:subClassOf rdf:nodeID="A44"/>
+    <rdfs:subClassOf rdf:nodeID="A45"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Entidade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A55">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Coordenador"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#possui"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A56">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Instituicao"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ehAtendido"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A57">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Coordenador"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ehCoordenado"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Nome">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#hasProducao">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Producao"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isProducaoOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A58">
+    <rdf:rest rdf:nodeID="A59"/>
+    <rdf:first rdf:nodeID="A60"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <rdf:rest rdf:nodeID="A61"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Consultor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A62">
+    <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</xsd:minExclusive>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A63">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A64"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#produtorPossuiRebanho">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Rebanho"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Produtor"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#chains"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A65">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A66"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isProducaoOf">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Producao"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#hasRebanho">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Rebanho"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Fazenda"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isRebanhoOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A67">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A68"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A69">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Fazenda"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#consulta"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A70">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A30"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A42">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#consulta"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A71">
+    <rdf:rest rdf:nodeID="A72"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Rebanho"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ehProprietarioVaca">
+    <owl:propertyChainAxiom rdf:nodeID="A73"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Produtor"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#chains"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A74">
+    <owl:withRestrictions rdf:nodeID="A67"/>
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A59">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A75"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#NomeRebanho">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Rebanho"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A76">
+    <rdf:rest rdf:nodeID="A77"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Instituicao"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A78">
+    <rdf:rest rdf:nodeID="A48"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Tanque"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A38">
+    <owl:withRestrictions rdf:nodeID="A46"/>
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ValorProteinaLeite">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A35">
+    <rdf:rest rdf:nodeID="A79"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Fazenda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A40">
+    <rdf:rest rdf:nodeID="A34"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ControleLeiteiro"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A80">
+    <rdf:rest rdf:nodeID="A65"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#te">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#tess"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#tes"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A81">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#consulta"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#possui">
+    <rdfs:comment>nucleo contem um conjunto de coordenadores deste nucleo (normalmente regional)</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Coordenador"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Nucleo"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Nucleo">
+    <rdfs:subClassOf rdf:nodeID="A55"/>
+    <rdfs:subClassOf rdf:nodeID="A56"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Entidade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ehCoordenado">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Coordenador"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Consultor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A82">
+    <owl:intersectionOf rdf:nodeID="A83"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A47">
+    <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</xsd:maxInclusive>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A84">
+    <rdf:rest rdf:nodeID="A20"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Consultor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A77">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Nucleo"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A85">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#VacaSaudavel"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A86">
+    <owl:intersectionOf rdf:nodeID="A87"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#VacaBoa">
+    <owl:equivalentClass rdf:nodeID="A88"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A89">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A62"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#hasFazenda">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Fazenda"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Produtor"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isFazendaOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#hasVaca">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Rebanho"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isVacaOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A90">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Producao"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#hasProducao"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ehRebanhoProdutor">
+    <owl:propertyChainAxiom rdf:nodeID="A91"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Produtor"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Rebanho"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#produtorPossuiRebanho"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#chains"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#relac">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#indd"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ind"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#nucleoGerencia">
+    <owl:propertyChainAxiom rdf:nodeID="A92"/>
+    <owl:propertyChainAxiom rdf:nodeID="A93"/>
+    <rdfs:range rdf:nodeID="A94"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Nucleo"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#chains"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A95">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A96"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A93">
+    <rdf:rest rdf:nodeID="A97"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#possui"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A98">
+    <rdf:rest rdf:nodeID="A99"/>
+    <rdf:first rdf:nodeID="A100"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A83">
+    <rdf:rest rdf:nodeID="A101"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A102">
+    <owl:withRestrictions rdf:nodeID="A89"/>
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#NomeFazenda">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Fazenda"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A103">
+    <owl:intersectionOf rdf:nodeID="A104"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A105">
+    <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</xsd:maxInclusive>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A60">
+    <owl:someValuesFrom rdf:nodeID="A106"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ValorCCSAnteriorLeite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ValorGorduraLeite">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#enviaAmostra">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Instituicao"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Tanque"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#recebeAmostra"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A107">
+    <rdf:rest rdf:nodeID="A108"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A109">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isFazendaOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A88">
+    <owl:intersectionOf rdf:nodeID="A107"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A66">
+    <owl:someValuesFrom rdf:nodeID="A110"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ValorAcumuladoLeite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A111">
+    <rdf:rest rdf:nodeID="A112"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#hasProducao"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A108">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A86"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A53">
+    <rdf:rest rdf:nodeID="A113"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#hasRaca">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#RacaVaca"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isRacaOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isControleLeiteiroOf">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Producao"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ControleLeiteiro"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A114">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ControleLeiteiro"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#hasControleLeiteiro"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A115">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#coordena"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A116">
+    <owl:members rdf:nodeID="A117"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A75">
+    <owl:someValuesFrom rdf:nodeID="A118"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ValorCCSLeite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A119">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#consulta"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#DataFimLactacao">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A120">
+    <owl:intersectionOf rdf:nodeID="A121"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A122">
+    <rdf:rest rdf:nodeID="A123"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Coordenador"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#DataControleLeiteiro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Producao">
+    <rdfs:subClassOf rdf:nodeID="A124"/>
+    <rdfs:subClassOf rdf:nodeID="A114"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A125">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#RacaVaca"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#hasRaca"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A126">
+    <rdf:rest rdf:nodeID="A127"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#VacaInfeccaoEliminada"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A128">
+    <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</xsd:minExclusive>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A127">
+    <rdf:rest rdf:nodeID="A85"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#VacaNovaInfeccao"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#indd">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A68">
+    <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</xsd:maxInclusive>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#NomeVaca">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A129">
+    <owl:intersectionOf rdf:nodeID="A98"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A130">
+    <rdf:rest rdf:nodeID="A131"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isControleLeiteiroOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ehControleLeiteiroDe">
+    <owl:propertyChainAxiom rdf:nodeID="A130"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ControleLeiteiro"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#vacaTemControleLeiteiro"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#chains"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A31">
+    <rdf:rest rdf:nodeID="A132"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#atende"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ehArmazenado">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Tanque"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Producao"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A87">
+    <rdf:rest rdf:nodeID="A133"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#VacaProducaoAlta"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A99">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A37"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A97">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#coordena"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A61">
+    <rdf:rest rdf:nodeID="A76"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Coordenador"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ValorCCSAnteriorLeite">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A28">
+    <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</xsd:maxInclusive>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A117">
+    <rdf:rest rdf:nodeID="A126"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#VacaInfeccaoCronica"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#VacaInfeccaoCronica">
+    <owl:equivalentClass rdf:nodeID="A134"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A92">
+    <rdf:rest rdf:nodeID="A41"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#possui"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A104">
+    <rdf:rest rdf:nodeID="A135"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A136">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A17"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A124">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isProducaoOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A106">
+    <owl:withRestrictions rdf:nodeID="A137"/>
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl">
+    <rdfs:comment>Ontologia para analise de amostras de laboratorios para qualidade do leite.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A138">
+    <owl:someValuesFrom rdf:nodeID="A102"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ValorCCSLeite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A132">
+    <rdf:rest rdf:nodeID="A139"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#possui"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A101">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A140"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A141">
+    <owl:unionOf rdf:nodeID="A5"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ValorAcumuladoLeite">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A142">
+    <owl:withRestrictions rdf:nodeID="A143"/>
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A144">
+    <owl:someValuesFrom rdf:nodeID="A145"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ValorCCSAnteriorLeite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isVacaOf">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Rebanho"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A137">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A146"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A24">
+    <rdf:rest rdf:nodeID="A147"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Produtor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A148">
+    <rdf:rest rdf:nodeID="A119"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#coordena"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A91">
+    <rdf:rest rdf:nodeID="A109"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isRebanhoOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#VacaProducaoAlta">
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#VacaProducaoBaixa"/>
+    <owl:equivalentClass rdf:nodeID="A149"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#DataInicioLactacao">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A36">
+    <rdf:rest rdf:nodeID="A115"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#possui"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A150">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A138"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A151">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A105"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#VacaProblematica">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+    <owl:equivalentClass rdf:nodeID="A120"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <rdf:rest rdf:nodeID="A23"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Fazenda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A133">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A141"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A121">
+    <rdf:rest rdf:nodeID="A25"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#VacaProducaoBaixa"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A152">
+    <owl:someValuesFrom rdf:nodeID="A142"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ValorCCSLeite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A110">
+    <owl:withRestrictions rdf:nodeID="A136"/>
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A153">
+    <rdf:rest rdf:nodeID="A154"/>
+    <rdf:first rdf:nodeID="A144"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A79">
+    <rdf:rest rdf:nodeID="A155"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Producao"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A131">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isProducaoOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A156">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isRacaOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#coordenadorGerencia">
+    <owl:propertyChainAxiom rdf:nodeID="A148"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Fazenda"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Coordenador"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#chains"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#VacaSaudavel">
+    <owl:equivalentClass rdf:nodeID="A103"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#chains">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A123">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Fazenda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A157">
+    <owl:withRestrictions rdf:nodeID="A151"/>
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A112">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#hasControleLeiteiro"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A158">
+    <owl:someValuesFrom rdf:nodeID="A74"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ValorCCSAnteriorLeite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A149">
+    <owl:intersectionOf rdf:nodeID="A80"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A26">
+    <owl:unionOf rdf:nodeID="A159"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A160">
+    <rdf:rest rdf:nodeID="A161"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#RacaVaca"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#VacaProducaoBaixa">
+    <owl:equivalentClass rdf:nodeID="A2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A113">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A162"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A49">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Producao"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isControleLeiteiroOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#armazenaProducao">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Producao"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Tanque"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ehArmazenado"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A94">
+    <owl:unionOf rdf:nodeID="A84"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A163">
+    <rdf:rest rdf:nodeID="A150"/>
+    <rdf:first rdf:nodeID="A158"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A52">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Producao"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#armazenaProducao"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A100">
+    <owl:someValuesFrom rdf:nodeID="A157"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ValorCCSAnteriorLeite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A96">
+    <owl:intersectionOf rdf:nodeID="A153"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A140">
+    <owl:intersectionOf rdf:nodeID="A58"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A154">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A152"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A146">
+    <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</xsd:minExclusive>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A147">
+    <rdf:rest rdf:nodeID="A71"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#RacaVaca"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A50">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A164"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A143">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A128"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#tess">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#pertence">
+    <rdfs:comment>eh propriedade contrario do nucleo, na qual coordenadores pertencem a um determinado nucleo</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Nucleo"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Coordenador"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#possui"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca">
+    <rdfs:subClassOf rdf:nodeID="A29"/>
+    <rdfs:subClassOf rdf:nodeID="A125"/>
+    <rdfs:subClassOf rdf:nodeID="A90"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A72">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A145">
+    <owl:withRestrictions rdf:nodeID="A70"/>
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A22">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#hasVaca"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <rdf:rest rdf:nodeID="A122"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Consultor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#hasControleLeiteiro">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ControleLeiteiro"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Producao"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isControleLeiteiroOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A73">
+    <rdf:rest rdf:nodeID="A21"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#hasFazenda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A165">
+    <owl:withRestrictions rdf:nodeID="A63"/>
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#vacaTemControleLeiteiro">
+    <owl:propertyChainAxiom rdf:nodeID="A111"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ControleLeiteiro"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#chains"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#recebeAmostra">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Tanque"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Instituicao"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A166">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Rebanho"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#hasRebanho"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Consultor">
+    <rdfs:subClassOf rdf:nodeID="A57"/>
+    <rdfs:subClassOf rdf:nodeID="A69"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Entidade"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#NomeProdutor">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Produtor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#consulta">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Fazenda"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Consultor"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ehConsultado"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A167">
+    <rdf:rest rdf:nodeID="A95"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Vaca"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A118">
+    <owl:withRestrictions rdf:nodeID="A27"/>
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A139">
+    <rdf:rest rdf:nodeID="A81"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#coordena"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#RacaVaca">
+    <rdfs:subClassOf rdf:nodeID="A156"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#isRebanhoOf">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Fazenda"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Rebanho"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A164">
+    <owl:someValuesFrom rdf:nodeID="A165"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ValorAcumuladoLeite"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A155">
+    <rdf:rest rdf:nodeID="A160"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Produtor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A135">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A129"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A54">
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Fazenda"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#hasFazenda"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A64">
+    <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:maxExclusive>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A161">
+    <rdf:rest rdf:nodeID="A78"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Rebanho"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Fazenda">
+    <rdfs:subClassOf rdf:nodeID="A51"/>
+    <rdfs:subClassOf rdf:nodeID="A166"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A162">
+    <owl:intersectionOf rdf:nodeID="A163"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A134">
+    <owl:intersectionOf rdf:nodeID="A167"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ehAtendido">
+    <rdfs:comment>um conjunto de nucleos sao atendidos por uma instituicao</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Instituicao"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Nucleo"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A159">
+    <rdf:rest rdf:nodeID="A15"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#VacaInfeccaoCronica"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#VacaInfeccaoEliminada">
+    <owl:equivalentClass rdf:nodeID="A82"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#coordena">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Consultor"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#Coordenador"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#ehCoordenado"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+</rdf:RDF>

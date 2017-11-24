@@ -40,28 +40,33 @@ public class ProducaoRebanhoDataResource {
         
         ReasonerOntologia ro = new ReasonerOntologia();
         model = ro.getInfModel();
+        
         //Montando a string de query em sparql
         //Query para obter as fazendas relacionadas com todos os produtores cadastrados
-        /*queryString = "PREFIX ont: <http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#>\n" +
-"SELECT ?maior_controle (SUM(?total_leite) as ?prod_leite) (COUNT(?total_leite) as ?total_controles)\n" +
-"WHERE{\n" +
-"{\n" +
-"SELECT ?nome_rebanho ?nome_vaca (MAX(?data) as ?maior_controle) (MAX(?leite) as ?total_leite)\n" +
-"  WHERE{  ?rebanho ont:hasVaca ?vaca.    ?vaca ont:hasProducao ?producao. ?producao ont:hasControleLeiteiro ?controle.  ?controle ont:DataControleLeiteiro ?data. ?controle ont:ValorAcumuladoLeite ?leite. ?rebanho ont:NomeRebanho ?nome_rebanho.\n" +
-"?vaca ont:NomeVaca ?nome_vaca. FILTER regex(?nome_rebanho , \"rebanho1964\")}\n" +
-"  GROUP BY ?nome_rebanho ?nome_vaca\n" +
-"}\n" +
-"}GROUP BY ?maior_controle ORDER BY ?maior_controle";*/
+//Usando normal
+//        queryString = "PREFIX ont: <http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#>\n" +
+//"SELECT ?maior_controle (SUM(?total_leite) as ?prod_leite) (COUNT(?total_leite) as ?total_controles)\n" +
+//"WHERE{\n" +
+//"{\n" +
+//"SELECT ?nome_rebanho ?nome_vaca (MAX(?data) as ?maior_controle) (MAX(?leite) as ?total_leite)\n" +
+//"  WHERE{  ?rebanho ont:hasAnimal ?vaca.   ?vaca ont:hasProduction ?prod. ?prod ont:hasDairyControl ?controle.   ?controle ont:DataControleLeiteiro ?data. ?controle ont:ValorAcumuladoLeite ?leite. ?rebanho ont:NomeRebanho ?nome_rebanho.\n" +
+//"?vaca ont:NomeVaca ?nome_vaca. FILTER regex(?nome_rebanho , \"herd1964\")}\n" +
+//"GROUP BY ?nome_rebanho ?nome_vaca\n" +
+//"}\n" +
+//"}GROUP BY ?maior_controle ORDER BY ?maior_controle";
+
+//Usando property chain
         queryString = "PREFIX ont: <http://www.semanticweb.org/pedroivo/ontologies/2016/6/vaquinha.owl#>\n" +
 "SELECT ?maior_controle (SUM(?total_leite) as ?prod_leite) (COUNT(?total_leite) as ?total_controles)\n" +
 "WHERE{\n" +
 "{\n" +
 "SELECT ?nome_rebanho ?nome_vaca (MAX(?data) as ?maior_controle) (MAX(?leite) as ?total_leite)\n" +
-"  WHERE{  ?rebanho ont:hasVaca ?vaca.    ?vaca ont:vacaTemControleLeiteiro ?controle.  ?controle ont:DataControleLeiteiro ?data. ?controle ont:ValorAcumuladoLeite ?leite. ?rebanho ont:NomeRebanho ?nome_rebanho.\n" +
-"?vaca ont:NomeVaca ?nome_vaca. FILTER regex(?nome_rebanho , \"rebanho1964\")}\n" +
+"  WHERE{  ?rebanho ont:hasAnimal ?vaca.    ?vaca ont:cowHasDairyControl ?controle.  ?controle ont:DataControleLeiteiro ?data. ?controle ont:ValorAcumuladoLeite ?leite. ?rebanho ont:NomeRebanho ?nome_rebanho.\n" +
+"?vaca ont:NomeVaca ?nome_vaca. FILTER regex(?nome_rebanho , \"herd1964\")}\n" +
 "  GROUP BY ?nome_rebanho ?nome_vaca\n" +
 "}\n" +
 "}GROUP BY ?maior_controle ORDER BY ?maior_controle";
+        
         //Exibe todos os resultados obtidos com a query
         //Criação e execução da query para explorar os resultados em seguida
         query = QueryFactory.create(queryString);
